@@ -1,0 +1,63 @@
+@use "../utils/variables" as *;
+
+.hero {
+    background-color: $dark-teal;
+    padding: 4rem 0;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__content {
+        flex: 1;
+        color: $white;
+    }
+
+    &__title {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    &__text {
+        max-width: 520px;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        line-height: 1.6;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: $light-teal;
+        color: $dark-teal;
+        padding: 0.9rem 1.6rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $schedule-blue;
+        }
+    }
+
+    &__media {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 520px;
+        border-radius: 20px;
+        border: 8px solid $light-teal;
+        display: block;
+    }
+}
