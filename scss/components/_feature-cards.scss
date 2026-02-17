@@ -1,0 +1,27 @@
+@use "../utils/variables" as *;
+
+.feature-card {
+
+    &__image {
+        background-color: #e9e9e9;
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 1.2rem;
+        width: 100%;
+        max-width: 220px;
+        display: block;
+    }
+
+    &__title {
+        color: $dark-teal;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.6rem;
+    }
+
+    &__text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #4f6b70;
+    }
+}
