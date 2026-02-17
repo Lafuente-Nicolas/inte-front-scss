@@ -47,7 +47,7 @@
 }
 
 .hero__media {
-    flex: 1;
+    flex: 1; // Permet à l'image de prendre tout l'espace disponible
     max-width: 520px;
     border: 6px solid $light-teal;
     border-radius: 22px;
