@@ -1,0 +1,72 @@
+@use "../utils/variables" as *;
+
+.project {
+    background: $dark-teal;
+    margin-top: -50px; // Permet de faire chevaucher la section sur la précédente
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 60px 40px 50px;
+    color: $white;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto 40px auto;
+    }
+
+
+    &__bg-shape {
+        position: absolute;
+        left: -120px;
+        bottom: -80px;
+        width: 420px;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 40% 60% 50% 70%;
+        transform: rotate(25deg);
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        opacity: .85;
+        max-width: 620px;
+        margin: 0 auto 18px;
+        line-height: 1.5;
+    }
+
+    &__cta {
+        background: $white;
+        color: $dark-teal;
+        border: none;
+        border-radius: 999px;
+        padding: 10px 20px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 35px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    &__cards {
+        display: flex;
+        gap: 28px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
