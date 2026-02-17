@@ -26,3 +26,36 @@
         text-align: left;
     }
 }
+
+@media (max-width: 768px) {
+    .features {
+
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            justify-items: center;
+        }
+
+        &__title {
+            font-size: 1.4rem;
+        }
+    }
+
+    .feature-card {
+        max-width: 320px;
+        text-align: center;
+
+        &__image {
+            margin: 0 auto 1rem auto;
+            max-width: 180px;
+        }
+
+        &__title {
+            font-size: 1rem;
+        }
+
+        &__text {
+            font-size: 0.9rem;
+        }
+    }
+}
