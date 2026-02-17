@@ -1,0 +1,70 @@
+@use "../utils/variables" as *;
+
+.schedule {
+    background: linear-gradient(180deg, $schedule-blue 0%, $light-teal 100%);
+    padding: 100px 20px 140px;
+    text-align: center;
+    color: $white;
+    margin-top: -40px; // Permet de faire chevaucher la section sur la précédente
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.schedule__container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.schedule__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.schedule__text {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.schedule__board {
+    background: $white;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    display: inline-block;
+}
+
+.schedule__image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .schedule {
+        padding: 60px 20px;
+    }
+
+    .schedule__title {
+        font-size: 26px;
+    }
+
+    .schedule__subtitle {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .schedule__image-wrapper {
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .schedule__image {
+        border-radius: 14px;
+    }
+
+}
