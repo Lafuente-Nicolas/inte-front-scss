@@ -1,0 +1,73 @@
+@use "../utils/variables" as *;
+
+.footer {
+    background: $light-teal;
+    color: $white;
+    margin-top: -90px;
+    padding: 3.5rem 2rem 2rem;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+
+    &__container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    &__columns {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__column {
+        font-size: .85rem;
+        line-height: 1.6;
+    }
+
+    &__heading {
+        font-size: .95rem;
+        font-weight: 600;
+        margin-bottom: .7rem;
+        color: $white;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1.3rem 0;
+
+        li {
+            opacity: .85;
+            margin-bottom: .25rem;
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid rgba(255, 255, 255, .35);
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: .8rem;
+    }
+
+    &__legal {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: $white;
+            text-decoration: none;
+            opacity: .85;
+            transition: opacity .2s;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: underline;
+            }
+        }
+    }
+}
