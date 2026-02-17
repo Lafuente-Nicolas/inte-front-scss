@@ -1,16 +1,15 @@
 @use "../utils/variables" as *;
 
 .learning {
-    background: $off-white;
-    margin-top: -70px;
-    border-top-left-radius: 60px;
-    border-top-right-radius: 60px;
+    margin-top: -120px;
+
 
     &__container {
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
         margin: 3rem auto;
         background: #c7d6db;
-        border-radius: 40px;
-        padding: 5rem 3rem 4rem;
+        padding: 120px 90px 120px;
         text-align: center;
     }
 
