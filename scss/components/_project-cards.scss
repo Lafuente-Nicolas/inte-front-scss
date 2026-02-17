@@ -1,0 +1,80 @@
+@use "../utils/variables" as *;
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    border-radius: 14px;
+    padding: 22px;
+    width: 270px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__header {
+    margin-bottom: 14px;
+}
+
+.card__icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-yellow;
+    font-size: 18px;
+}
+
+.card__title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.card__date {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.card__content {
+    margin-bottom: 14px;
+}
+
+.card__dropzone {
+    border: 2px dashed rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 18px 12px;
+    font-size: 12px;
+    opacity: .85;
+    margin-bottom: 8px;
+}
+
+.card__file-btn {
+    background: none;
+    border: none;
+    color: $primary-yellow;
+}
+
+.card__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    opacity: .65;
+}
+
+.card__footer {
+    margin-top: auto;
+}
+
+.card__btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: transparent;
+    color: $white;
+    font-size: 13px;
+}

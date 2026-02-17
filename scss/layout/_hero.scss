@@ -2,62 +2,111 @@
 
 .hero {
     background-color: $dark-teal;
-    padding: 4rem 0;
+    padding: 80px 40px;
+    color: $white;
+}
 
-    &__container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 2rem;
+.hero__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        display: flex;
-        align-items: center;
-        gap: 3rem;
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.hero__text-block {
+    flex: 1;
+    max-width: 520px;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero__text {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: rgba($white, 0.85);
+}
+
+.hero__button {
+    background-color: $light-teal;
+    color: $dark-teal;
+    padding: 14px 26px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.hero__media {
+    flex: 1; // Permet à l'image de prendre tout l'espace disponible
+    max-width: 520px;
+    border: 6px solid $light-teal;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.hero__image {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 40px 20px 70px;
     }
 
-    &__content {
-        flex: 1;
-        color: $white;
+    .hero__content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
 
-    &__title {
-        font-size: 3rem;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-        font-weight: 700;
+    .hero__text-block {
+        display: contents;
     }
 
-    &__text {
-        max-width: 520px;
-        margin-bottom: 2rem;
-        opacity: 0.9;
-        line-height: 1.6;
+    // permets de réorganiser les éléments dans l'ordre souhaité 
+    .hero__title {
+        order: 1;
     }
 
-    &__button {
-        display: inline-block;
-        background-color: $light-teal;
-        color: $dark-teal;
-        padding: 0.9rem 1.6rem;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 600;
-
-        &:hover {
-            background-color: $schedule-blue;
-        }
+    .hero__media {
+        order: 2;
     }
 
-    &__media {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+    .hero__text {
+        order: 3;
     }
 
-    &__image {
-        width: 100%;
-        max-width: 520px;
-        border-radius: 20px;
-        border: 8px solid $light-teal;
-        display: block;
+    .hero__button {
+        order: 4;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__media {
+        max-width: 100%;
+    }
+
+    .hero__text {
+        margin-bottom: 18px;
+    }
+
+    .hero__button {
+        margin-top: 0;
+        padding: 12px 22px;
+        font-size: 15px;
     }
 }

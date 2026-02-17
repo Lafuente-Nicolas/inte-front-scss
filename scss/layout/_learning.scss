@@ -1,0 +1,47 @@
+@use "../utils/variables" as *;
+
+.learning {
+    margin-top: -120px;
+
+
+    &__container {
+        border-top-left-radius: 90px;
+        border-top-right-radius: 90px;
+        margin: 3rem auto;
+        background: #c7d6db;
+        padding: 120px 90px 120px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        color: $dark-teal;
+    }
+
+    &__text {
+        max-width: 640px;
+        margin: 0 auto 2rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: rgba($dark-teal, .85);
+    }
+
+    &__button {
+        display: inline-block;
+        background: $primary-yellow;
+        color: $dark-teal;
+        padding: 0.7rem 1.8rem;
+        border-radius: 999px;
+        font-weight: 600;
+        margin-bottom: 3.5rem;
+        text-decoration: none;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        flex-wrap: wrap;
+    }
+}

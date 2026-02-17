@@ -34,33 +34,37 @@
     </header>
 
     <main>
-
         <section class="hero">
             <div class="hero__container">
 
                 <div class="hero__content">
-                    <h1 class="hero__title">
-                        Welcome to the English Game
-                    </h1>
 
-                    <p class="hero__text">
-                        An immersive challenge to practise and improve your English level,
-                        through an inter-school competition. For one week, you will work with
-                        your team to design a full serious game. Be prepared to get involved,
-                        create the best game and challenge yourself!
-                    </p>
+                    <div class="hero__text-block">
+                        <h1 class="hero__title">
+                            Welcome to the English Game
+                        </h1>
 
-                    <a href="#" class="hero__button hero__button--primary">
-                        Discover the program
-                    </a>
-                </div>
+                        <p class="hero__text">
+                            An immersive challenge to practise and improve your English level,
+                            through an inter-school competition. For one week, you will work
+                            with your team to design a full serious game. Be prepared to get
+                            involved, create the best game and challenge yourself!
+                        </p>
 
-                <div class="hero__media">
-                    <img src="./assets/woman.jpg" alt="Video presentation" class="hero__image">
+                        <a href="#" class="hero__button">
+                            Discover the program
+                        </a>
+                    </div>
+
+                    <div class="hero__media">
+                        <img src="./assets/woman.jpg" alt="Video presentation" class="hero__image">
+                    </div>
+
                 </div>
 
             </div>
         </section>
+
         <section class="features">
             <div class="features__container">
 
@@ -71,7 +75,7 @@
                 <div class="features__grid">
 
                     <article class="feature-card">
-                        <img src="img1.png" alt="" class="feature-card__image">
+                        <img src="./assets/three-people.png" alt="" class="feature-card__image">
 
                         <h3 class="feature-card__title">
                             An experience based on fun, learning and practice
@@ -86,7 +90,7 @@
 
 
                     <article class="feature-card">
-                        <img src="img2.png" alt="" class="feature-card__image">
+                        <img src="./assets/one-guy.png" alt="" class="feature-card__image">
 
                         <h3 class="feature-card__title">
                             The basics of serious games through videos and quizzes
@@ -101,7 +105,7 @@
 
 
                     <article class="feature-card">
-                        <img src="img3.png" alt="" class="feature-card__image">
+                        <img src="./assets/two-girls-one-skrew-diver.png" alt="" class="feature-card__image">
 
                         <h3 class="feature-card__title">
                             Tools to design a project from A to Z
@@ -132,93 +136,177 @@
                 </p>
 
                 <div class="schedule__image-wrapper">
-                    <img src="schedule.png" alt="Weekly schedule of the English Game" class="schedule__image">
+                    <img src="./assets/edt.webp" alt="Weekly schedule of the English Game" class="schedule__image">
                 </div>
-
 
             </div>
         </section>
-
         <section class="project">
-            <div class="project__container">
+            <div class="project__header">
                 <h2 class="project__title">My project</h2>
 
-                <p class="project__text">
-                    This is where you can see the deliverables you need to submit during the week!
-                    Click on “Go to My Project” to find out what needs to be done.
+                <p class="project__subtitle">
+                    This is where you can see the deliverables your team needs to submit during the week!
+                    Click on "Go to My Project" to see what your team has to do this week.
                 </p>
 
-                <a href="#" class="project__button">
-                    Go to my project
-                </a>
+                <button class="project__cta">Go to my project</button>
+            </div>
+            <div class="project__cards">
 
-                <div class="project__cards">
+                <article class="card">
+                    <header class="card__header">
+                        <div class="card__icon" aria-hidden="true">❗</div>
+                        <h3 class="card__title">Rules VI</h3>
+                        <p class="card__date">
+                            <time datetime="2026-02-17T12:30">Due date Tuesday 12:30 PM</time>
+                        </p>
+                    </header>
 
-                    <article class="project-card">
-                        <h3 class="project-card__title">Rules V1</h3>
-                        <p class="project-card__deadline">Due date: Tuesday 12:30 PM</p>
-                        <p class="project-card__upload">Drag and Drop or choose file to upload</p>
-                        <button class="project-card__button">Download template</button>
-                    </article>
+                    <section class="card__content">
+                        <div class="card__dropzone">
+                            <p>
+                                Drag and Drop or <button type="button" class="card__file-btn">choose file</button> to
+                                upload
+                            </p>
+                        </div>
 
-                    <article class="project-card">
-                        <h3 class="project-card__title">Level design mockup</h3>
-                        <p class="project-card__deadline">Due date: Tuesday 5 PM</p>
-                        <p class="project-card__upload">Drag and Drop or choose file to upload</p>
-                        <button class="project-card__button">Download template</button>
-                    </article>
+                        <div class="card__meta">
+                            <span>Accepted files: pdf, zip</span>
+                            <span>Max: 25MB</span>
+                        </div>
+                    </section>
 
-                    <article class="project-card">
-                        <h3 class="project-card__title">Rules V1</h3>
-                        <p class="project-card__deadline">Send on Tuesday 5 PM</p>
-                        <button class="project-card__button">Modify this deliverable</button>
-                        <button class="project-card__button project-card__button--secondary">
-                            Download template
-                        </button>
-                    </article>
+                    <footer class="card__footer">
+                        <button class="card__btn">Download template</button>
+                    </footer>
+                </article>
 
-                </div>
+                <article class="card">
+                    <header class="card__header">
+                        <div class="card__icon" aria-hidden="true">🎓</div>
+                        <h3 class="card__title">Level design mockup</h3>
+                        <p class="card__date">
+                            <time datetime="2026-02-17T17:00">Due date Tuesday 5 PM</time>
+                        </p>
+                    </header>
 
+                    <section class="card__content">
+                        <div class="card__dropzone">
+                            <p>
+                                Drag and Drop or <button type="button" class="card__file-btn">choose file</button> to
+                                upload
+                            </p>
+                        </div>
+
+                        <div class="card__meta">
+                            <span>Accepted files: pdf, zip</span>
+                            <span>Max: 25MB</span>
+                        </div>
+                    </section>
+
+                    <footer class="card__footer">
+                        <button class="card__btn">Download template</button>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header class="card__header">
+                        <div class="card__icon" aria-hidden="true">✔</div>
+                        <h3 class="card__title">Rules VI</h3>
+                        <p class="card__date">
+                            <time datetime="2026-02-17T17:00">Send before Tuesday 5 PM</time>
+                        </p>
+                    </header>
+
+                    <section class="card__content">
+                        <div class="card__dropzone">
+                            <p>
+                                Drag and Drop or <button type="button" class="card__file-btn">choose file</button> to
+                                upload
+                            </p>
+                        </div>
+
+                        <div class="card__meta">
+                            <span>Accepted files: pdf, zip</span>
+                            <span>Max: 25MB</span>
+                        </div>
+                    </section>
+                    </form>
+                    <footer class="card__footer">
+                        <button class="card__btn">Download template</button>
+                    </footer>
+                </article>
             </div>
         </section>
-
         <section class="learning">
             <div class="learning__container">
 
-                <h2 class="learning__title">Learning</h2>
+                <header class="learning__header">
+                    <h2 class="learning__title">Learning</h2>
 
-                <p class="learning__text">
-                    Here’s an idea of what you will be learning about during the week.
-                    The information is provided in video format and will help you and your
-                    team make your serious game as good as possible. Enjoy watching!
-                </p>
-                <a href="#" class="learning__button">Go to learning</a>
+                    <p class="learning__text">
+                        Here’s an idea of what you will be learning about during the week.
+                        The information is provided in video format and will help you and your
+                        team make your serious game as good as possible. Enjoy watching!
+                    </p>
+
+                    <a href="#" class="learning__button">Go to learning</a>
+                </header>
 
                 <div class="learning__cards">
 
                     <article class="learning-card">
-                        <img src="video1.png" alt="What are serious games?" class="learning-card__image">
-                        <h3 class="learning-card__title">What are serious games?</h3>
-                        <span class="learning-card__badge">Monday</span>
+                        <div class="learning-card__media">
+                            <img src="./assets/OIP.webp" alt="Presentation about serious games"
+                                class="learning-card__image">
+                        </div>
+
+                        <div class="learning-card__body">
+                            <span class="learning-card__badge">Monday</span>
+                            <h3 class="learning-card__title">What are serious games?</h3>
+                        </div>
+
+                        <button class="learning-card__arrow" aria-label="Open lesson">
+                            →
+                        </button>
                     </article>
 
                     <article class="learning-card">
-                        <img src="video2.png" alt="Business case" class="learning-card__image">
-                        <h3 class="learning-card__title">Business case</h3>
-                        <span class="learning-card__badge">Monday</span>
+                        <div class="learning-card__media">
+                            <img src="./assets/OIP.webp" alt="Business case explanation" class="learning-card__image">
+                        </div>
+
+                        <div class="learning-card__body">
+                            <span class="learning-card__badge">Monday</span>
+                            <h3 class="learning-card__title">Business case</h3>
+                        </div>
+
+                        <button class="learning-card__arrow" aria-label="Open lesson">
+                            →
+                        </button>
                     </article>
 
                     <article class="learning-card">
-                        <img src="video3.png" alt="About fun and learning" class="learning-card__image">
-                        <h3 class="learning-card__title">About fun… and learning!</h3>
-                        <span class="learning-card__badge">Monday</span>
+                        <div class="learning-card__media">
+                            <img src="./assets/OIP.webp" alt="Learning and fun relationship"
+                                class="learning-card__image">
+                        </div>
+
+                        <div class="learning-card__body">
+                            <span class="learning-card__badge">Monday</span>
+                            <h3 class="learning-card__title">About fun… and learning!</h3>
+                        </div>
+
+                        <button class="learning-card__arrow" aria-label="Open lesson">
+                            →
+                        </button>
                     </article>
 
                 </div>
-
-
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -290,7 +378,7 @@
 
             <div class="footer__bottom">
                 <p class="footer__copyright">
-                    Made by MyDigitalSchool
+                    Made by Nicolas Lafuente
                 </p>
 
                 <div class="footer__legal">
@@ -300,12 +388,8 @@
                     <a href="#">Ticket</a>
                 </div>
             </div>
-
-
         </div>
     </footer>
-
-
 </body>
 
 </html>
